@@ -14,4 +14,4 @@ Nesse projeto desenvolvemos um mini-jogo inspirado no jogo de cartas Super-Trunf
 - Função que faz com que o vencedor ganhe a carta derrotada e adicione ao seu deck
 - Placar com as cartas restantes de cada um. Quem chegar a 0 cartas primeiro, perde
 - Condição que verifica se tem alguma tributo selecionado antes de prosseguir com o jogo
-- Botão para começar uma nova rodada
+- Botão para começar uma nova rodada.
