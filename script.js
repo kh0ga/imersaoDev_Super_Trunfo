@@ -95,8 +95,8 @@ let carta8 = {
   }
 };
 
-let deckJogador = [carta1, carta2, carta3, carta4];
-let deckMaquina = [carta5, carta6, carta7, carta8];
+let deckJogador = [carta1];
+let deckMaquina = [carta4];
 let cartaMaquina;
 let cartaJogador;
 
