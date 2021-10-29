@@ -1,0 +1,400 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 854px;
+  background-image: url("https://images5.alphacoders.com/967/thumb-1920-967270.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+
+  --cor-forca: #9e1212;
+  --cor-poder: #1083ee;
+  --cor-inteligencia: #f7d30a;
+}
+
+.tela-derrota {
+  background: url("https://m.media-amazon.com/images/I/71yu6yl+X0L._SS500_.jpg")
+    no-repeat center #000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tela-vitoria {
+  background: url("https://t3.ftcdn.net/jpg/03/14/56/66/360_F_314566645_UNHlYyGK2EVdGQ8MoNw95vvH44yknrc7.jpg")
+    no-repeat center #000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* PLACAR */
+#divPlacar {
+  position: fixed;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+
+.quantidadeCartas {
+  font-family: "Anton";
+  font-size: 48px;
+}
+
+#box-placar {
+  display: flex;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+#titulo-placar {
+  font-weight: bold;
+  font-size: 28px;
+  border: #fff solid 2px;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  margin: 0;
+}
+
+.box-placar {
+  padding: 10px;
+  width: 100%;
+}
+
+#placar-jogador {
+  background: var(--cor-poder);
+}
+
+#placar-maquina {
+  background: var(--cor-forca);
+}
+
+button {
+  padding: 16px 24px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  /* width: 150px; */
+  cursor: pointer;
+}
+
+#btnJogar {
+  background: #f89909;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: white;
+}
+
+#atributos {
+  color: #fff;
+}
+
+.carta {
+  width: 300px;
+  overflow: visible;
+  position: relative;
+  border-radius: 33px;
+  background-color: rgb(255, 255, 255);
+}
+
+.fundo-cor {
+  background: rgb(245, 203, 18);
+  width: 300px;
+  height: 560px;
+  border-radius: 33px;
+}
+
+.question {
+  margin-left: -60px;
+  margin-top: 80px;
+}
+
+#divPersonagem {
+  position: relative;
+  height: 360px;
+}
+
+.nome {
+  width: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.nome-anime {
+  font-size: 0.8rem;
+  color: #eb9616;
+  margin: 0;
+}
+
+.nome-personagem {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.divAtributos {
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  height: 140px;
+  margin-top: 8px;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.atributo {
+  box-sizing: border-box;
+  display: block;
+  padding: 20px;
+  width: 33.34%;
+}
+
+#valor-atributo-forca {
+  color: var(--cor-forca);
+}
+
+#valor-atributo-poder {
+  color: var(--cor-poder);
+}
+
+#valor-atributo-inteligencia {
+  color: var(--cor-inteligencia);
+}
+
+.icon-atributo {
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+.valor-atributo {
+  margin-top: 10px;
+  font-size: 30px;
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  color: #fff;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 40px auto 0;
+  gap: 180px;
+  width: auto;
+  /* background-color: #9bec04; */
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#versus {
+  position: absolute;
+  height: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Selecionar Atributos */
+.imgAtributo {
+  height: 44px;
+}
+
+#selecionarAtributos {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  gap: 24px;
+  transition: 0.5s linear;
+}
+
+#selecionarAtributos input {
+  font-size: 24px;
+  color: rgb(177, 177, 177);
+  width: auto;
+  height: 100%;
+  appearance: none;
+  border-radius: 90px;
+  padding: 8px 10px;
+  cursor: pointer;
+  margin: 0;
+  transition: all 0.2s linear;
+}
+
+#selecionarAtributos input::before {
+  content: attr(label);
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.divAtributo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* EFEITO DO CORTE */
+.efeitoVitoria {
+  margin: 0;
+  position: absolute;
+  right: -100px;
+}
+
+.efeitoDerrota {
+  margin: 0;
+  position: absolute;
+  /* top: 290px; */
+  left: -100px;
+}
+
+.semEfeito {
+  display: none;
+}
+
+.hit-effect {
+  height: 500px;
+}
+
+#radioForca:checked {
+  background-color: var(--cor-forca);
+  color: #fff;
+}
+
+#radioPoder:checked {
+  background-color: var(--cor-poder);
+  color: #fff;
+}
+
+#radioInteligencia:checked {
+  background-color: var(--cor-inteligencia);
+  color: #fff;
+}
+
+.imgPersonagem {
+  animation: entrada 2.5s;
+}
+
+@keyframes entrada {
+  from {
+    transform: rotateY(360deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Personagens */
+#zoro {
+  height: 400px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+#goku {
+  height: 400px;
+  margin-left: -20px;
+  margin-top: -30px;
+}
+
+#agumon {
+  height: 400px;
+  margin-left: -20px;
+  margin-top: -30px;
+}
+
+#chopper {
+  height: 420px;
+  margin-left: -10px;
+  margin-top: -40px;
+}
+
+#luffy {
+  height: 420px;
+  margin-left: -10px;
+  margin-top: -40px;
+}
+
+#madara {
+  height: 400px;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+#gon {
+  height: 400px;
+  margin-left: -30px;
+  margin-top: -40px;
+}
+
+#lugia {
+  height: 380px;
+  margin-left: -60px;
+  margin-top: -10px;
+}

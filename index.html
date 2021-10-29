@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>
+        Imersão Dev - Aula 08
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+
+        <div id="divPlacar">
+            <p id="titulo-placar">Cartas restantes</p>
+            
+            <div id="box-placar">
+                <div id="placar-jogador" class="box-placar">
+                    <p>Jogador</p><span id="quantidadeCartasJogador" class="quantidadeCartas"></span>
+                </div>
+
+                <div id="placar-maquina" class="box-placar">
+                    <p>Máquina</p><span id="quantidadeCartasMaquina" class="quantidadeCartas"></span>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="page-title">Super Trunfo</h1>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div id="selecionarAtributos" style="visibility: hidden;">
+
+                <div id="selecionaForca" class="divAtributo">
+                    <img class="imgAtributo" src="img/icon-forca.png">
+                    <input id=radioForca type="radio" label="Força" name="radioAtributo" value="forca">
+                </div>
+
+                <div id="selecionaPoder" class="divAtributo">
+                    <img class="imgAtributo" src="img/icon-poder.png">
+                    <input id=radioPoder type="radio" label="Poder" name="radioAtributo" value="poder">
+                </div>
+
+                <div id="selecionaInteligencia" class="divAtributo">
+                    <img class="imgAtributo" src="img/icon-inteligencia.png">
+                    <input id=radioInteligencia type="radio" label="Inteligência" name="radioAtributo" value="inteligencia">
+                </div>
+            </div>
+            <div class="wrapper"></div>
+
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Duelar!</button>
+
+            <button type="button" id="btnNovaRodada" onclick="setTela()" style="display: none;">Próxima Rodada</button>
+            <div id="resultado"></div>
+
+        </form>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
