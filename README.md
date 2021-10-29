@@ -5,8 +5,8 @@ Nesse projeto desenvolvemos um mini-jogo inspirado no jogo de cartas Super-Trunf
 ## Detalhes
 
 - Função para sortear uma carta para o jogador e outra para a máquina;
-- Exibiros atributos das cartas na tela para o jogador;
-- Obter o atribudo escolhido pelo jogador e comparar com a carta da máquina;
+- Exibir os atributos das cartas na tela para o jogador;
+- Obter o atributo escolhido pelo jogador e comparar com a carta da máquina;
 - Comparar o atributo de ambas as cartas e definir um vencedor.
 
 ## Meus complementos
